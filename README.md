@@ -2,6 +2,8 @@
 
 Magnify.js is a simple vanilla JS library to magnify HTML elements on mouse hover event.
 
+[Demo Page](http://sogokato.github.io/magnify.js/)
+
 ## Getting Started
 
 ### CDN

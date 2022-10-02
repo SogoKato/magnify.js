@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Magnify.js</title>
+        <style>
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .container div {
+                flex-basis: 33%;
+                transition: transform .2s;
+            }
+            .container div img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Demo Page</h1>
+            <p><a href="https://github.com/SogoKato/magnify.js">GitHub</a></p>
+            <section>
+                <h2>Basic Usage</h2>
+                <div class="container">
+                    <div class="magnify" data-magnify-scale=".8">
+                        <img src="images/dog_1.jpg" alt="Dog">
+                        <p>.8x</p>
+                    </div>
+                    <div class="magnify" data-magnify-scale="1.2">
+                        <img src="images/dog_2.jpg" alt="Dog">
+                        <p>1.2x</p>
+                    </div>
+                    <div class="magnify">
+                        <img src="images/dog_3.jpg" alt="Dog">
+                        <p>1.5x</p>
+                    </div>
+                    <div></div>
+                    <div class="magnify" data-magnify-scale="3, 1">
+                        <img src="images/dog_4.jpg" alt="Dog">
+                        <p>3x for x-axis, 1x for y-axis</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/gh/SogoKato/magnify.js@main/magnify.min.js"></script>
+        <script>
+            const magnify = new Magnify(".magnify");
+        </script>        
+    </body>
+</html>
